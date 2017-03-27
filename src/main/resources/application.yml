@@ -1,0 +1,15 @@
+jhipster:
+    cors:
+        allowed-origins: "*"
+        allowed-methods: GET, PUT, POST, DELETE, OPTIONS
+        allowed-headers: "*"
+        exposed-headers: "authorization, content-type, date, connection, transfer-encoding, x-application-context, x-content-type-options, x-xss-protection"
+        allow-credentials: true
+        max-age: 1800
+    security:
+        authentication:
+            jwt:
+                secret: 51378c946459a40d961a7739631a189c23daf925 # my-secret-token-to-change-in-production
+                # Token is valid 24 hours
+                token-validity-in-seconds: 86400
+                token-validity-in-seconds-for-remember-me: 2592000
